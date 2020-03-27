@@ -1,0 +1,100 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "91fabd6c-96d1-4663-acda-ce9bc1abee58": {
+        "id": "91fabd6c-96d1-4663-acda-ce9bc1abee58",
+        "parent": null,
+        "name": "testEB-indu.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "testEB-indu.js",
+        "cursor": {
+          "lineNumber": 5,
+          "column": 3
+        },
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "cwecustomRule",
+            "config": {}
+          }
+        ],
+        "testCases": {
+          "687c9e5c-71d1-46ee-aea8-9314e9bddcbe": {
+            "id": "687c9e5c-71d1-46ee-aea8-9314e9bddcbe",
+            "name": "Test event",
+            "functionId": "91fabd6c-96d1-4663-acda-ce9bc1abee58",
+            "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      }
+    },
+    "openFiles": [
+      "91fabd6c-96d1-4663-acda-ce9bc1abee58"
+    ],
+    "currentFileId": "91fabd6c-96d1-4663-acda-ce9bc1abee58",
+    "resources": {
+      "cwecustomRule": {
+        "name": "cwecustomRule",
+        "type": "CLOUD_WATCH",
+        "config": {
+          "mode": 1,
+          "arn": "arn:aws:events:us-east-1:318300609668:rule/my-event-bus-udith/custom-rule",
+          "name": "custom-rule",
+          "eventBusName": "my-event-bus-udith"
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "aws-sdk": {
+          "name": "aws-sdk",
+          "language": "nodejs",
+          "version": "2.644.0",
+          "dev": true,
+          "notRemovable": false
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "testEB-indu",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "language": "nodejs",
+    "platformRegions": {},
+    "lastSave": 1585300487727
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "testeb-indu",
+      "url": "https://github.com/Indunil1992/testeb-indu"
+    }
+  }
+}
